@@ -1,0 +1,25 @@
+.fade-left,
+.fade-right {
+  opacity: 0;
+  transition: opacity 1s, transform 2s; /* Duration */
+}
+
+.fade-left.fade-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-right.fade-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-left.fade-out {
+  opacity: 0;
+  transform: translateX(-50px); /* Offset */
+}
+
+.fade-right.fade-out {
+  opacity: 0;
+  transform: translateX(50px); /* Offset */
+}
